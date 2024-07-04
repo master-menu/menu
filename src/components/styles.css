@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Overpass+Mono:600,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+  overflow-x: hidden;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.pdf {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+/*
+  GLOBAL
+*/
+
+button {
+  border:0;
+  background:0;
+  cursor:pointer;
+}
+
+.profile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pag1{
+  background-image: url("../images/COL-PAG1.png");
+}
+
+.pag2{
+  background-image: url("../images/COL-PAG2.png");
+}
+
+.h2_pad{
+  padding: 1rem;
+  margin-top:0;
+  background-image: url("../images/LOGO.png");
+  background-size: cover;
+  height: 80px;
+}
+
+.p_pad{
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.colazioneDivisore{
+  margin-top: 1rem;
+}
+
+.colazioneContainer p{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.colazioneContainer p span{
+  color: white;
+  font-family: "menuText";
+}
+
+.colazioneContainer p span:first-child{
+  width: 80%;
+  text-align: left;
+  padding: 5px;
+}
+
+.colazioneContainer p span:nth-child(2){
+  width: 20%;
+  text-align: right;
+  padding: 5px;
+}
+
+/*
+  HEADER
+*/
+section{
+  height: 100vh;
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+}
+
+.btn-home-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header{
+    background: transparent;
+    padding: 2rem;
+    width: 100%;
+    color: white;
+    text-align: left;
+}
+
+.nav-header .logo {
+  color:white;
+  text-transform:uppercase;
+  font-family: "menuText";
+  font-weight: lighter;
+  font-size: 1.6rem;
+}
+
+.home-buttons{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /*gap: 2rem;*/
+}
+
+.home-text{
+  font-family: "menuText";
+  font-size: 1.7rem;
+  font-weight: lighter;
+  color: white;
+}
+
+.home-buttons button{
+ 
+  padding: 5px;
+  margin: 0;
+  /*height: 90px;
+   width: 250px;
+  border-radius: 35px;
+  background-color: rgb(190, 128, 64);
+  font-size: 1.2rem;
+  font-weight: 900;*/
+  border: none;
+  cursor: pointer;
+  font-family: 'Overpass Mono', monospace !important;
+  background: transparent;
+  
+}
+
+.home-buttons button img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.allergeni-container{
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-size: cover;
+}
+
+.allergeni-img{
+  width: 100%;
+  height: auto;
+}
+
+.allergeni-img:not(:first-child){
+  margin-top: 2.5rem;
+}
+
+.col-title{
+  background-image: url("../images/COL-TITLE.png");
+  background-size: cover;
+  min-width: 335px;
+  height: 65px;
+}
+
+.pra-title{
+  background-image: url("../images/PRA-TITLE.png");
+  background-size: cover;
+  min-width: 335px;
+  height: 65px;
+}
+
+.ser-title{
+  background-image: url("../images/SER-TITLE.png");
+  background-size: cover;
+  min-width: 335px;
+  height: 65px;
+}
+
+.home-section {
+  min-height:100vh;
+  background:linear-gradient(to bottom,rgba(rgb(0,0,0),.8),transparent);
+  display:flex;
+  flex-direction:column;
+}
+
+.home-section .center {
+  line-height:0;
+  text-align:center;
+  color:white;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-section .center .top_logo{
+  height: 97px;
+  background-image: url("../images/LOGO.png");
+  background-size: cover;
+  max-width: 350px;
+}
+
+.home-section .center .down_logo{
+  text-align: right;
+  font-size: 0.98rem;
+  min-width: 335px;
+  margin: 0 !important;
+  /*
+  background-image: url("../images/SLOGAN.png");
+  background-size: cover;
+  min-width: 335px;*/
+}
+
+.home-section .center #asterisk {
+  color:rgb(190, 128, 64);
+  line-height:0.5;
+  font-size:30px;
+  display:flex;
+  justify-content:center;
+  padding: 1rem;
+}
+
+.home-section .center #asterisk &:before {
+  margin-right:10px;
+}
+
+.home-section .center #asterisk &:after {
+  margin-left:10px;
+}
+
+.home-section .center p {
+  text-transform:uppercase;
+  margin-top:5px;
+  font-size:14px;
+  font-weight:bold;
+  letter-spacing:3px;
+}
+
+.home-section .center div {
+  font-family: 'Alex Brush', cursive !important;
+  color: rgb(190, 128, 64);
+}
+
+.home-section .center .top_logo {
+  text-transform:uppercase;
+  letter-spacing:5px;
+  font-size:28px;
+}
+
+/*
+  MEDIA QUERIES
+*/
+@media screen and (max-width: 425px) {
+  .home-section {
+    /*background-attachment: scroll;*/
+  }
+}
+@media (min-width:768px) {
+  footer .restaurant-info {
+      flex-direction:row;
+      justify-content:space-around;
+      align-items:flex-start;
+  }
+}
+@media(min-width:769px) {
+
+  .add-padding {
+    padding:50px 0;
+  }
+  .add-flex {
+    flex-direction:row;
+    align-items:center;
+  }
+
+  .add-flex div:first-child {
+    flex:1;
+    padding:0 50px;
+  }
+
+  .add-flex div:last-child {
+    min-width:400px;
+    margin:50px;
+  }
+
+  .menu &-images {
+    flex:1;
+  }
+    
+  .menu  div:last-child {
+      flex:1;
+  }
+  
+}
+
+@font-face {
+  font-family: "menuText";
+  src: url('../fonts/AcuminVariableConcept.otf');
+}
+
+/* ANIMATIONS */
+#asterisk {
+  opacity: 0;
+  transform-origin: 50% 4%;
+  animation: spin .5s forwards;
+  animation-delay: .3s;
+}
+
+#asterisk::before, #asterisk::after {
+  transform-origin: center center;
+  animation: grow .8s forwards;
+  animation-delay: .8s;
+}
+.center .down_logo {
+  transform: translateY(-40px);
+  opacity: 0;
+  animation: fadeDown 1s forwards;
+  animation-delay: 1.3s;
+}
+
+.center .top_logo {
+  transform: scale(2);
+  opacity: 0;
+  animation: fade 1s forwards;
+}
+.center h1 {
+  transform: translateY(40px);
+  opacity: 0;
+  animation: fadeUp .5s forwards;
+  animation-delay: .3s;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes grow {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    width: 40%;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
