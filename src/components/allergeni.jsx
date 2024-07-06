@@ -5,7 +5,7 @@ function Allergeni(){
     return(
         <section>
             <NavHeader from="allergeni"/>
-            <img className='allergeni-img' src='https://i.imgur.com/omxgGvm.png' />
+            <img className='allergeni-img' src='https://i.imgur.com/yIg0KrN.png' />
         </section>
     )
 }

@@ -5,10 +5,10 @@ function Cena(){
     return(
         <section>
             <NavHeader />
-            <img className='allergeni-img' src="https://i.imgur.com/aPTKNGG.png" />
-            <img className='allergeni-img' src="https://i.imgur.com/NrAe6zR.png" />
-            <img className='allergeni-img' src="https://i.imgur.com/VTjjYos.png" />
-            <img className='allergeni-img' src="https://i.imgur.com/3g0Q61e.png" />
+            <img className='allergeni-img' src="https://i.imgur.com/jnqWwiB.png" />
+            <img className='allergeni-img' src="https://i.imgur.com/AcoNvI0.png" />
+            <img className='allergeni-img' src="https://i.imgur.com/HAHn64S.png" />
+            <img className='allergeni-img' src="https://i.imgur.com/zl4KrU2.png" />
         </section>
     )
 }

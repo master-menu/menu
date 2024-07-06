@@ -5,9 +5,9 @@ function Pranzo(){
     return(
         <section>
             <NavHeader />
-            <img className='allergeni-img' src='https://i.imgur.com/fO8JFtM.png' />
-            <img className='allergeni-img' src='https://i.imgur.com/WP9JtLn.png' />
-            <img className='allergeni-img' src='https://i.imgur.com/cWsnHwq.png' />
+            <img className='allergeni-img' src='https://i.imgur.com/4GNSW15.png' />
+            <img className='allergeni-img' src='https://i.imgur.com/k1Y8gTi.png' />
+            <img className='allergeni-img' src='https://i.imgur.com/KRJnN81.png' />
 
         </section>
     )
